@@ -1,4 +1,4 @@
-# <p align="left"> This repo will be complete on April 14, 2023. </p>
+# <p align="left"> This project will be completed by April 14, 2023. </p>
 
 # msvsdasms
 
