@@ -2,7 +2,7 @@
 ## <p align="center"> This will be completed by April 14, 2023. </p>
 #
 
-# Mixed Signal VSD - Automatic Security Monitoring System
+# Automatic Security Monitoring System
 
 
 ## Table of Contents
