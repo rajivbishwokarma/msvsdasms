@@ -9,7 +9,7 @@
 
 | Week Number |         Topic                                |   Status             |
 |:-----------:|:--------------------------------------------:|:--------------------:|
-| 0           | [Setup and Preparation](./week0/README.md)   |    :construction:    |
+| 0           | [Setup and Preparation](./week0)   |    :construction:    |
 | 1           |                       |                      |
 | 2           |                       |                      |
 | 3           |                       |                      |
