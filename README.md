@@ -5,7 +5,7 @@
 # <p align="center"> Automatic Security Monitoring System </p>
 
 
-## Table of Contents
+## <p align="center">  Table of Contents </p>
 
 | Week Number |         Topic                                |   Status             |
 |:-----------:|:--------------------------------------------:|:--------------------:|
