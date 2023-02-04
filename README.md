@@ -1,8 +1,5 @@
-<p align="center"> 
- # WORK IN PROGRESS!
- 
- Check back after April 14, 2023.
-</p>
+# <p align="center"> WORK IN PROGRESS! </p>
+## <p align="center"> This will be completed by April 14, 2023. </p>
 
 # msvsdasms
 
