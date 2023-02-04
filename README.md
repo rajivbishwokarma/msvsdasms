@@ -2,7 +2,7 @@
 ## <p align="center"> This will be completed by April 14, 2023. </p>
 #
 
-# Automatic Security Monitoring System
+# <p align="center"> Automatic Security Monitoring System </p>
 
 
 ## Table of Contents
