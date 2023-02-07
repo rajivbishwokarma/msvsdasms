@@ -30,7 +30,7 @@ To use the **template.sh** script, do:
 For example, if you just use the template.sh without any design name, it will create a folder called **design** and then populate the sub-folders. If you supply a design name, say, **week0_inverter** then it will create a folder named **week0_inverter** and populate the sub-folders.
 
 
-## 1. Magic
+## 1. [Magic]()
 
 Install Magic and all its dependencies using the [1_setup_magic.sh](./1_setup_magic.sh) script. Just do:
 
@@ -40,7 +40,7 @@ chmod +x 1_setup_magic.sh
 ./1_setup_magic.sh
 ```
 
-## 2. ngspice
+## 2. [ngspice]()
 
 Install **ngspice** and all its dependencies using the [2_setup_ngspice.sh](./2_setup_ngspice.sh) script. Just do:
 
@@ -50,7 +50,7 @@ chmod +x 2_setup_ngspice.sh
 ./2_setup_ngspice.sh
 ```
 
-## 4. netgen
+## 4. [netgen]()
 
 Install **netgen** and all its dependencies using the [3_setup_netgen.shv](./3_setup_netgen.sh) script. Just do:
 
@@ -61,7 +61,7 @@ chmod +x 3_setup_netgen.sh
 ```
 
 
-## 4. xschem
+## 4. [xschem]()
 
 Install **xschem** and all its dependencies using the [4_setup_xschem.sh](./4_setup_xschem.sh) script. Just do:
 
@@ -71,7 +71,7 @@ chmod +x 4_setup_xschem.sh
 ./4_setup_xschem.sh
 ```
 
-## 5. Open PDK with Sky130
+## 5. [Open PDK with Sky130]()
 
 Install **Open PDK with Sky130 library** and all its dependencies using the [5_setup_openpdk.sh](./5_setup_openpdk.sh) script. Just do:
 
@@ -81,7 +81,7 @@ chmod +x 5_setup_openpdk.sh
 ./5_setup_openpdk.sh
 ```
 
-## 6. ALIGN
+## 6. [ALIGN](https://github.com/ALIGN-analoglayout/ALIGN-public)
 
 Install **ALIGN** with the [6_setup_align.sh](./6_setup_align.sh) script. Do:
 ```
