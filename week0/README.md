@@ -11,9 +11,9 @@ As a preparation for the work, we are going to install the following software in
 | 5           | [Open PDK (Sky130)](https://github.com/rajivbishwokarma/msvsdasms/tree/master/week0#open-pdk-sky130)     |    Sky130 library    |
 | 6           | [ALIGN]()     |    Analog Netlist to GDS    |
 
-<br>
+
 ### RUN EVERYTHING AS a NON-ROOT USER
-<br>
+
 
 The [0_run_all.sh](./0_run_all.sh) script runs all the scripts one after another. It should work and you are welcome to try, but I cannot verify that it works 100% as I have not tested it. I recommend running all the scripts one by one, in the given order for a tested setup.
 
