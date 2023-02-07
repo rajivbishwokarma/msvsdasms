@@ -12,7 +12,7 @@ As a preparation for the work, we are going to install the following software in
 | 6           | [ALIGN]()     |    Analog Netlist to GDS    |
 
 
-### <p align="center"> RUN EVERYTHING AS a NON-ROOT USER </p>
+### <p align="center"> Run all the provided scripts a non-root user </p>
 
 
 The [0_run_all.sh](./0_run_all.sh) script runs all the scripts one after another. It should work and you are welcome to try, but I cannot verify that it works 100% as I have not tested it. I recommend running all the scripts one by one, in the given order for a tested setup.
