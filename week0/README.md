@@ -101,3 +101,17 @@ To test an example design named **inverter_v1**, cd into **work** folder within 
 ```
 schematic2layout.py ../examples/inverter_v1/ -p ../pdks/FinFET14nm_Mock_PDK/
 ```
+
+## 6.1 [ALIGN-SKY130 PDK](https://github.com/ALIGN-analoglayout/ALIGN-pdk-sky130)
+
+To install the Sky130 PDK that is compatible with ALIGN tool, clone the following repo inside **ALIGN-public/pdk** folder.
+
+```
+git clone https://github.com/ALIGN-analoglayout/ALIGN-pdk-sky130
+```
+And, then use one of the examples to test the setup with:
+
+```
+schematic2layout.py ../pdks/ALIGN-pdk-sky130/examples/telescopic_ota/ -p ../pdks/ALIGN-pdk-sky130/SKY130_PDK/
+```
+
