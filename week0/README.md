@@ -12,15 +12,14 @@ As a preparation for the work, we are going to install the following software in
 | 6           | [ALIGN]()     |    Analog Netlist to GDS    |
 
 <br>
-<p style="color:red;" > <h4> <b> RUN EVERYTHING AS a NON-ROOT USER </b> </h3> </p>
-<br>
+###RUN EVERYTHING AS a NON-ROOT USER
 <br>
 
-The [0_run_all.sh](./0_run_all.sh) script runs all the scripts one after another. It should work theoretically and you are welcome to try, but I cannot verify that it works 100% as I have not tested it. I recommend running all the scripts one by one, in the given order for a tested setup.
+The [0_run_all.sh](./0_run_all.sh) script runs all the scripts one after another. It should work and you are welcome to try, but I cannot verify that it works 100% as I have not tested it. I recommend running all the scripts one by one, in the given order for a tested setup.
 
 In addition to the above scripts, I have also written a separate small script called [template.sh](./template.sh) that creates a folder structure for the design project and initializes the sub-folders with required files. 
 
-BIG NOTE: You can only run this script after running all the scripts given above. 
+**BIG NOTE: You can only run this script after running all the scripts given above.**
 To use the **template.sh** script, do:
 
 ```
