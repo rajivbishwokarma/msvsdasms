@@ -136,3 +136,4 @@ schematic2layout.py ../pdks/ALIGN-pdk-sky130/examples/telescopic_ota/ -p ../pdks
 <br><br>
 
 ## 2. Characterizing an inverter
+We will first create an inverter using the Sky130 PDK that we installed through the OpenPDK. To do that, let's first create an inverter. 
