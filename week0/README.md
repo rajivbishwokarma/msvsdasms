@@ -43,6 +43,9 @@ To use the **template.sh** script, do:
 ./template.sh     or     ./template.sh <design_name>
 ```
 
+[Small note] If you want to run the **template.sh** script from anywhere within the system, then run the [export_template.sh](./export_template.sh) script.
+
+
 For example, if you just use the template.sh without any design name, it will create a folder called **design** and then populate the sub-folders. If you supply a design name, say, **week0_inverter** then it will create a folder named **week0_inverter** and populate the sub-folders.
 
 
@@ -137,3 +140,32 @@ schematic2layout.py ../pdks/ALIGN-pdk-sky130/examples/telescopic_ota/ -p ../pdks
 
 ## 2. Characterizing an inverter
 We will first create an inverter using the Sky130 PDK that we installed through the OpenPDK. To do that, let's first create an inverter. 
+
+<p align="center">
+  <img src="./images/inverter_rb1.jpg">
+</p>
+
+For the scematic above, we can create symbol in two ways. We generate the symbol through **Symbol->Make symbol from schematic (A)** and it will generate the symbol shown in the left. We can do it manually using the drawing tools provided within the **xschem** and I created the one on the right.
+
+<p align="left">
+  <img width=300 src="./images/inverter_rb2.jpg">
+  <img width=300 src="./images/inverter_rb3.jpg">
+</p>
+
+When we create a custom symbol, we have to describe the global schematic property with something like given below. This is to make sure that SPICE recognizes our device when we use in our design. This can be set by clicking anywhere in the blank space and pressing **q** and entering the below informatin in the text box that appears as shown in the figure below.
+
+```
+type=subcircuit
+format="@name @pinlist @symname"
+template="name=X1"
+```
+<p align="center">
+  <img width=400 src="./images/inverter_rb4.jpg">
+</p>
+
+I also created a buffer from the inverter that I created above as shown below. 
+
+<p align="left">
+  <img width=330 src="./images/buffer_level0.jpg">
+  <img width=330 src="./images/buffer_level1.jpg">
+</p>
