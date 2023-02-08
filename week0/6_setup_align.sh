@@ -34,3 +34,11 @@ pip install -e .
 
 pip install -v -e .[test] --no-build-isolation
 pip install -v --no-build-isolation -e . --no-deps --install-option='-DBUILD_TESTING=ON'
+pip install -v --no-build-isolation -e . --no-deps --install-option='-DBUILD_TESTING=ON'
+
+
+# Clone the Sky130 PDK
+cd ~/Work/ALIGN-public
+
+git clone https://github.com/ALIGN-analoglayout/ALIGN-pdk-sky130
+

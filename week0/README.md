@@ -11,16 +11,15 @@ As a preparation for the work, we are going to install the following software in
 | 5           | [Open PDK (Sky130)](https://github.com/rajivbishwokarma/msvsdasms/tree/master/week0#open-pdk-sky130)     |    Sky130 library    |
 | 6           | [ALIGN]()     |    Analog Netlist to GDS    |
 
-<br>
-<p style="color:red;" > <h4> <b> RUN EVERYTHING AS a NON-ROOT USER </b> </h3> </p>
-<br>
-<br>
 
-The [0_run_all.sh](./0_run_all.sh) script runs all the scripts one after another. It should work theoretically and you are welcome to try, but I cannot verify that it works 100% as I have not tested it. I recommend running all the scripts one by one, in the given order for a tested setup.
+### <p align="center"> Run all the provided scripts a non-root user </p>
+
+
+The [0_run_all.sh](./0_run_all.sh) script runs all the scripts one after another. It should work and you are welcome to try, but I cannot verify that it works 100% as I have not tested it. I recommend running all the scripts one by one, in the given order for a tested setup.
 
 In addition to the above scripts, I have also written a separate small script called [template.sh](./template.sh) that creates a folder structure for the design project and initializes the sub-folders with required files. 
 
-BIG NOTE: You can only run this script after running all the scripts given above. 
+**BIG NOTE: You can only run this script after running all the scripts given above.**
 To use the **template.sh** script, do:
 
 ```
@@ -101,3 +100,17 @@ To test an example design named **inverter_v1**, cd into **work** folder within 
 ```
 schematic2layout.py ../examples/inverter_v1/ -p ../pdks/FinFET14nm_Mock_PDK/
 ```
+
+## 6.1 [ALIGN-SKY130 PDK](https://github.com/ALIGN-analoglayout/ALIGN-pdk-sky130)
+
+To install the Sky130 PDK that is compatible with ALIGN tool, clone the following repo inside **ALIGN-public/pdk** folder.
+
+```
+git clone https://github.com/ALIGN-analoglayout/ALIGN-pdk-sky130
+```
+And, then use one of the examples to test the setup with:
+
+```
+schematic2layout.py ../pdks/ALIGN-pdk-sky130/examples/telescopic_ota/ -p ../pdks/ALIGN-pdk-sky130/SKY130_PDK/
+```
+
