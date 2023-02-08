@@ -19,7 +19,6 @@ source general/bin/activate
 
 python3 -m pip install pip --upgrade
 
-pip install align
 pip install pandas
 pip install scipy
 pip install nltk
