@@ -2,6 +2,23 @@
 
 As a preparation for the work, we are going to install the following software in **Ubuntu 20.04**. I created the scripts in the following numbered order, it is best if they are run in the same order.
 
+
+## Table of Contents 
+| #  |         Topic          |   Description        |
+|:--:|:-------------------------:|:--------------------:|
+| 1  | Setting up the tools      | Set up all the software and PDK required for the following labs
+| 2  | Characterizing an inverter | Create an inverter in xschem and run simulation|
+| 3  | Characterizing a buffer    | Create a buffer in xschem and run simulation|
+
+
+
+
+
+<br><br><br>
+
+
+## 1. Setting up the tools
+
 | #  |         Software          |   Description        |
 |:-----------:|:-------------------------:|:--------------------:|
 | 1           | [magic](https://github.com/rajivbishwokarma/msvsdasms/tree/master/week0#1-magic)                 |    Layout Editor    |
