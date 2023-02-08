@@ -38,7 +38,7 @@ pip install -v --no-build-isolation -e . --no-deps --install-option='-DBUILD_TES
 
 
 # Clone the Sky130 PDK
-cd ~/Work/ALIGN-public
+cd ~/Work/ALIGN-public/pdk
 
 git clone https://github.com/ALIGN-analoglayout/ALIGN-pdk-sky130
 

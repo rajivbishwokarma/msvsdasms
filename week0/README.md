@@ -2,13 +2,13 @@
 
 As a preparation for the work, we are going to install the following software in **Ubuntu 20.04**. I created the scripts in the following numbered order, it is best if they are run in the same order.
 
+<br>
 
 ## Table of Contents 
 | #  |         Topic          |   Description        |
 |:--:|:-------------------------:|:--------------------:|
 | 1  | Setting up the tools      | Set up all the software and PDK required for the following labs
 | 2  | Characterizing an inverter | Create an inverter in xschem and run simulation|
-| 3  | Characterizing a buffer    | Create a buffer in xschem and run simulation|
 
 
 
@@ -120,6 +120,8 @@ schematic2layout.py ../examples/inverter_v1/ -p ../pdks/FinFET14nm_Mock_PDK/
 
 ## 6.1 [ALIGN-SKY130 PDK](https://github.com/ALIGN-analoglayout/ALIGN-pdk-sky130)
 
+The ALIGN installation script should have installed the PDK inside **ALIGN-public/pdk/** folder. But in case it did not, follow the following steps.
+
 To install the Sky130 PDK that is compatible with ALIGN tool, clone the following repo inside **ALIGN-public/pdk** folder.
 
 ```
@@ -131,3 +133,6 @@ And, then use one of the examples to test the setup with:
 schematic2layout.py ../pdks/ALIGN-pdk-sky130/examples/telescopic_ota/ -p ../pdks/ALIGN-pdk-sky130/SKY130_PDK/
 ```
 
+<br><br>
+
+## 2. Characterizing an inverter

@@ -1,6 +1,3 @@
-# Change to home
-cd ~/work
-
 # Create a new folder  structure
 if [ $# -eq 0 ]
 then 
@@ -10,7 +7,8 @@ else
 fi
 
 mkdir "$design"
-cd "$design"
+pwd=$(pwd)
+cd "$pwd/$design"
 
 # Create sub-folders for all the software
 mkdir magic ngspice netgen xschem
