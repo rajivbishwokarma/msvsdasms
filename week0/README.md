@@ -43,7 +43,11 @@ To use the **template.sh** script, do:
 ./template.sh     or     ./template.sh <design_name>
 ```
 
-[Small note] If you want to run the **template.sh** script from anywhere within the system, then run the [export_template.sh](./export_template.sh) script.
+[Small note] If you want to run the **template.sh** script from anywhere within the system, then run the [export_template.sh](./export_template.sh) script using the following command [note the extra dot in the beginning].
+
+```
+. ./export_template.sh
+```
 
 
 For example, if you just use the template.sh without any design name, it will create a folder called **design** and then populate the sub-folders. If you supply a design name, say, **week0_inverter** then it will create a folder named **week0_inverter** and populate the sub-folders.
@@ -169,3 +173,4 @@ I also created a buffer from the inverter that I created above as shown below.
   <img width=330 src="./images/buffer_level0.jpg">
   <img width=330 src="./images/buffer_level1.jpg">
 </p>
+
