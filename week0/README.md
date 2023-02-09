@@ -174,3 +174,39 @@ I also created a buffer from the inverter that I created above as shown below.
   <img width=500 src="./images/buffer_level1.jpg">
 </p>
 
+
+Now, characterizing the inverter circuit with the following setup leads to the output shown in the waveform.
+
+In order to run the simulation, we have to add a **code** block with the following configuration. This is done so that SPICE can expand the sub-circuit call with the Sky130 library files.
+
+```
+name=inverter_spice only_toplevel=false value="
+
+.lib /usr/local/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+
+.control
+  dc V2 0 1.8 0.01
+  plot a b
+.endc
+
+.save all
+"
+```
+
+Then, we can add the **code_shown** block with the following transient values. 
+
+```
+name=inverter_spice1 only_toplevel=false value=".tran 0.01n 1u
+.save all"
+```
+
+<p align="left">
+  <img width=500 src="./images/inverter_setup.jpg">
+  <img width=200 src="./images/inverter_setup_1.jpg">
+</p>
+
+And, generating the netlist and running the simulation, we get the following output waveform.
+
+<p align="center">
+  <img width=500 src="./images/inverter_setup_2.jpg">
+</p>
