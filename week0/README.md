@@ -255,4 +255,6 @@ name=inverter_spice only_toplevel=false value=
   <img width=400 src="./images/inverter_layout_xschem.jpg">
 </p>
 
+:construction: There is an error in the output simulation waveform, fixing it.
+
 This concludes the post-layout characterization of the inverter. 
