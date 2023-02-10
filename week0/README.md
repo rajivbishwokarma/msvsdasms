@@ -258,7 +258,7 @@ name=inverter_spice only_toplevel=false value=
 :construction: There is an error in the output simulation waveform, fixing it.
 
 <p align="center">
-  <img width=400 src="./images/inverter_layout_error.jpg">
+  <img width=400 src="./images/inverter_spice_error.jpg">
 </p>
 
 This concludes the post-layout characterization of the inverter. 
