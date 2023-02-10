@@ -262,3 +262,8 @@ name=inverter_spice only_toplevel=false value=
 </p>
 
 This concludes the post-layout characterization of the inverter. 
+
+The lvs done on the two circuits outputs the following results. 
+<p align="center">
+  <img width=800 src="./images/lvs.jpg">
+</p>
