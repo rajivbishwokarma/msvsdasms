@@ -210,3 +210,49 @@ And, generating the netlist and running the simulation, we get the following out
 <p align="center">
   <img width=500 src="./images/inverter_setup_2.jpg">
 </p>
+
+
+### **Inverter layout with Magic**
+
+We first create an inverter in Magic and extract the SPICE netlist.
+<p align="center">
+  <img width=800 src="./images/inverter_layout_rb1.jpg">
+</p>
+
+TThen we extract the netlist using the following commands. 
+```
+extract all
+ext2spice cthresh 0 rthresh 0
+ext2spice
+```
+
+And we get the netlist for SPICE simulation.
+
+Now, in order to run the post-layout simulation, we have to include this netlist in the xschem testbench shown above. To do that, we need to change which netlist **xschem** calls when it launches the simulation. 
+
+Now open the symbol file (.sym) for the inverter that you generated and press **Q** to edit the global property in the schematic and you will get the property list, now edit as shown below. 
+
+<p align="center">
+  <img width=400 src="./images/inverter_primative.jpg">
+</p>
+
+Now, we will import this symbol to the testbench and add SPICE include command to include the newly generated spice.
+
+<p align="center">
+  <img width=800 src="./images/inverter_spice.jpg">
+</p>
+
+The inverter_spice code includes the directory to the Sky130 spice model files
+```
+name=inverter_spice only_toplevel=false value=
+
+"
+.lib /usr/local/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+"
+```
+
+<p align="center">
+  <img width=400 src="./images/inverter_layout_xschem.jpg">
+</p>
+
+This concludes the post-layout characterization of the inverter. 
