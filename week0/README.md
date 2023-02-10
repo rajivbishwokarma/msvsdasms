@@ -263,7 +263,29 @@ name=inverter_spice only_toplevel=false value=
 
 This concludes the post-layout characterization of the inverter. 
 
+
+## LVS
+
 The lvs done on the two circuits outputs the following results. 
 <p align="center">
   <img width=800 src="./images/lvs.jpg">
 </p>
+
+## Pre-layout and post-layout simulation for Fn
+
+Now, we will run a pre-layout and post-layout simulation for a custom function defined by:
+
+```
+Fn = [(B + D) . (A + C) + E.F]'
+```
+
+We first draw the schematic circuit in **xschem** and then create a test circuit for the schematic. 
+
+<p align="center">
+  <img width=600 src="./images/fn_xschem.jpg">
+</p>
+
+<p align="center">
+  <img width=600 src="./images/fn_spice.jpg">
+</p>
+
