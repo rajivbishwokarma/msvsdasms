@@ -315,3 +315,5 @@ ext2spice
 ```
 
 We get [this](./netlists/fnc.spice) netlist.
+
+And, to do the post-layout simulation of this circuit. We repeat the same steps that we did with the inverter. Instead of defining global property of the symbol as 'subcircuit', we define it as 'primitive' and link the [**Magic** generated SPICE netlist](./netlists/fnc.spice).
