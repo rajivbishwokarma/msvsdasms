@@ -279,7 +279,7 @@ Now, we will run a pre-layout and post-layout simulation for a custom function d
 Fn = [(B + D) . (A + C) + E.F]'
 ```
 
-We first draw the schematic circuit in **xschem** and then create a test circuit for the schematic. 
+We first draw the schematic circuit in **xschem** and then create a test circuit for the schematic. We get [this]() netlist from the current circuit. 
 
 <p align="center">
   <img width=600 src="./images/fn_xschem.jpg">
