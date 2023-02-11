@@ -306,3 +306,12 @@ Alternatively, we can create the layout completely from the scratch using the st
 <p align="center">
   <img width=800 src="./images/fn_layout2.jpg">
 </p>
+
+Then we can extract the netlist from this design using the following commands. 
+```
+extract all
+ext2spice cthresh 0 rthresh 0
+ext2spice
+```
+
+We get [this](./netlists/fnc.spice) netlist.
