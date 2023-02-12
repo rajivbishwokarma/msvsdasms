@@ -204,11 +204,11 @@ name=inverter_spice only_toplevel=false value="
 ```
 
 <p align="center">
-  <img width=500 src="./images/inverter_setup.jpg">
+  <img width=800 src="./images/inverter_setup.jpg">
 </p>
 
 <p align="center">
-  <img width=200 src="./images/inverter_setup_1.jpg">
+  <img width=400 src="./images/inverter_setup_1.jpg">
 </p>
 
 And, generating the netlist and running the simulation, we get the following output waveform.
