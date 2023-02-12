@@ -274,6 +274,14 @@ Also doing a transient simulation to the input gate, we get the following wavefo
 
 This concludes the post-layout characterization of the inverter. 
 
+## **3.5 Comparison between pre-layout and post-layout simulations**
+Two waveforms, side by side, are shown in the figure below. The general nature of the curves vary slightly in the two graphs (see the zommed in sections in the two smaller windows). 
+
+<p align="center">
+  <img width=800 src="./images/pre-post-layout-comparision.jpg">
+</p>
+
+
 
 ## **4. LVS of the Inverter**
 
