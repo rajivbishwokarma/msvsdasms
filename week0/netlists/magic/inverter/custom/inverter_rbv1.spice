@@ -1,0 +1,12 @@
+* SPICE3 file created from inverter_rbv1.ext - technology: sky130A
+
+.subckt inverter_rbv1 A Y v+ 0
+X0 Y A v+ v+ sky130_fd_pr__pfet_01v8 ad=4.5e+11p pd=2.9e+06u as=4.5e+11p ps=2.9e+06u w=1e+06u l=150000u
+X1 Y A 0 0 sky130_fd_pr__nfet_01v8 ad=4.5e+11p pd=2.9e+06u as=4.5e+11p ps=2.9e+06u w=1e+06u l=150000u
+C0 A v+ 0.08fF
+C1 Y v+ 0.14fF
+C2 A Y 0.04fF
+C3 Y 0 0.33fF
+C4 A 0 0.37fF
+C5 v+ 0 0.65fF
+.ends

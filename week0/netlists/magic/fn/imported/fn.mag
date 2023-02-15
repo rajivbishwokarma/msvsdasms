@@ -1,0 +1,178 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1676444771
+<< locali >>
+rect -700 -1840 1060 -1820
+rect -700 -1880 -680 -1840
+rect -640 -1880 990 -1840
+rect 1040 -1880 1060 -1840
+rect -700 -1900 1060 -1880
+<< viali >>
+rect -680 -1880 -640 -1840
+rect 990 -1880 1040 -1840
+<< metal1 >>
+rect -1100 -190 1410 -30
+rect -1060 -573 -1020 -190
+rect -290 -398 590 -360
+rect -920 -524 -858 -468
+rect -500 -522 -438 -466
+rect -1060 -631 -916 -573
+rect -864 -746 -498 -706
+rect -290 -710 -250 -398
+rect -90 -524 -28 -468
+rect 330 -524 392 -468
+rect 550 -710 590 -398
+rect 750 -524 812 -468
+rect 1170 -524 1232 -468
+rect 1330 -573 1370 -190
+rect 1228 -629 1370 -573
+rect 1330 -630 1370 -629
+rect -442 -748 -86 -710
+rect -32 -748 334 -710
+rect 388 -748 754 -710
+rect 808 -747 1174 -709
+rect -920 -854 -858 -798
+rect -500 -854 -438 -798
+rect -90 -854 -28 -798
+rect 130 -1050 170 -748
+rect 330 -854 392 -798
+rect 750 -854 812 -798
+rect 1170 -854 1232 -798
+rect -1100 -1110 1410 -1050
+rect -1050 -1402 -1010 -1110
+rect -920 -1360 -858 -1304
+rect -500 -1362 -438 -1306
+rect -280 -1402 -240 -1110
+rect -90 -1362 -28 -1306
+rect 330 -1360 392 -1304
+rect 750 -1362 812 -1306
+rect 1170 -1360 1232 -1304
+rect -1050 -1450 -916 -1402
+rect -862 -1450 -496 -1402
+rect -442 -1450 -86 -1402
+rect -32 -1450 334 -1402
+rect 388 -1450 754 -1402
+rect -920 -1676 -858 -1620
+rect -700 -1840 -620 -1450
+rect -500 -1674 -438 -1618
+rect -90 -1674 -28 -1618
+rect 330 -1674 392 -1618
+rect -700 -1880 -680 -1840
+rect -640 -1880 -620 -1840
+rect -700 -1900 -620 -1880
+rect 548 -1950 600 -1450
+rect 808 -1452 1174 -1404
+rect 750 -1674 812 -1618
+rect 970 -1840 1060 -1452
+rect 1228 -1578 1380 -1520
+rect 1170 -1674 1232 -1618
+rect 970 -1880 990 -1840
+rect 1040 -1880 1060 -1840
+rect 970 -1900 1060 -1880
+rect 1328 -1950 1380 -1578
+rect -1100 -2110 1410 -1950
+use sky130_fd_pr__pfet_01v8_XGS3BL  XM1
+timestamp 1676444771
+transform 1 0 -889 0 1 -661
+box -211 -319 211 319
+use sky130_fd_pr__pfet_01v8_XGS3BL  XM2
+timestamp 1676444771
+transform 1 0 -469 0 1 -661
+box -211 -319 211 319
+use sky130_fd_pr__pfet_01v8_XGS3BL  XM3
+timestamp 1676444771
+transform 1 0 -59 0 1 -661
+box -211 -319 211 319
+use sky130_fd_pr__pfet_01v8_XGS3BL  XM4
+timestamp 1676444771
+transform 1 0 361 0 1 -661
+box -211 -319 211 319
+use sky130_fd_pr__pfet_01v8_XGS3BL  XM5
+timestamp 1676444771
+transform 1 0 781 0 1 -661
+box -211 -319 211 319
+use sky130_fd_pr__pfet_01v8_XGS3BL  XM6
+timestamp 1676444771
+transform 1 0 1201 0 1 -661
+box -211 -319 211 319
+use sky130_fd_pr__nfet_01v8_648S5X  XM7
+timestamp 1676444771
+transform 1 0 -889 0 1 -1490
+box -211 -310 211 310
+use sky130_fd_pr__nfet_01v8_648S5X  XM8
+timestamp 1676444771
+transform 1 0 -469 0 1 -1490
+box -211 -310 211 310
+use sky130_fd_pr__nfet_01v8_648S5X  XM9
+timestamp 1676444771
+transform 1 0 -59 0 1 -1490
+box -211 -310 211 310
+use sky130_fd_pr__nfet_01v8_648S5X  XM10
+timestamp 1676444771
+transform 1 0 361 0 1 -1490
+box -211 -310 211 310
+use sky130_fd_pr__nfet_01v8_648S5X  XM11
+timestamp 1676444771
+transform 1 0 781 0 1 -1490
+box -211 -310 211 310
+use sky130_fd_pr__nfet_01v8_648S5X  sky130_fd_pr__nfet_01v8_648S5X_0
+timestamp 1676444771
+transform 1 0 1201 0 1 -1490
+box -211 -310 211 310
+<< labels >>
+rlabel metal1 -912 -1646 -912 -1646 1 A
+port 1 n
+rlabel metal1 -912 -828 -912 -828 1 A
+port 3 n
+rlabel metal1 -914 -1334 -914 -1334 1 A
+port 2 n
+rlabel metal1 -912 -496 -912 -496 1 A
+port 4 n
+rlabel metal1 -492 -498 -492 -498 1 C
+port 8 n
+rlabel metal1 -494 -828 -494 -828 1 C
+port 7 n
+rlabel metal1 -492 -1334 -492 -1334 1 C
+port 6 n
+rlabel metal1 -494 -1646 -494 -1646 1 C
+port 5 n
+rlabel metal1 -82 -1648 -82 -1648 1 E
+port 9 n
+rlabel metal1 -82 -1336 -82 -1336 1 E
+port 10 n
+rlabel metal1 -84 -828 -84 -828 1 E
+port 11 n
+rlabel metal1 -82 -498 -82 -498 1 E
+port 12 n
+rlabel metal1 336 -498 336 -498 1 F
+port 16 n
+rlabel metal1 338 -828 338 -828 1 F
+port 15 n
+rlabel metal1 336 -1334 336 -1334 1 F
+port 14 n
+rlabel metal1 338 -1648 338 -1648 1 F
+port 13 n
+rlabel metal1 758 -1646 758 -1646 1 D
+port 17 n
+rlabel metal1 758 -1336 758 -1336 1 D
+port 18 n
+rlabel metal1 758 -826 758 -826 1 D
+port 19 n
+rlabel metal1 758 -498 758 -498 1 D
+port 20 n
+rlabel metal1 1178 -498 1178 -498 1 B
+port 24 n
+rlabel metal1 1178 -826 1178 -826 1 B
+port 23 n
+rlabel metal1 1178 -1334 1178 -1334 1 B
+port 22 n
+rlabel metal1 1178 -1648 1178 -1648 1 B
+port 21 n
+rlabel metal1 1410 -1080 1410 -1080 3 Y
+port 25 e
+rlabel metal1 1410 -2030 1410 -2030 3 Y
+port 27 e
+rlabel metal1 1410 -100 1410 -100 3 vdd
+port 26 e
+<< end >>

@@ -1,0 +1,89 @@
+* SPICE3 file created from fn.ext - technology: sky130A
+
+.subckt fn A C E F D B Y vdd
+X0 Y B li_n700_n1900# VSUBS sky130_fd_pr__nfet_01v8 ad=1.74e+12p pd=1.548e+07u as=1.16e+12p ps=1.032e+07u w=1e+06u l=150000u
+X1 m1_n864_n746# A vdd XM6/w_n211_n319# sky130_fd_pr__pfet_01v8 ad=5.8e+11p pd=5.16e+06u as=5.8e+11p ps=5.16e+06u w=1e+06u l=150000u
+X2 m1_n442_n748# C m1_n864_n746# XM6/w_n211_n319# sky130_fd_pr__pfet_01v8 ad=1.16e+12p pd=1.032e+07u as=0p ps=0u w=1e+06u l=150000u
+X3 Y E m1_n442_n748# XM6/w_n211_n319# sky130_fd_pr__pfet_01v8 ad=5.8e+11p pd=5.16e+06u as=0p ps=0u w=1e+06u l=150000u
+X4 m1_n442_n748# F Y XM6/w_n211_n319# sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X5 m1_808_n747# D m1_n442_n748# XM6/w_n211_n319# sky130_fd_pr__pfet_01v8 ad=5.8e+11p pd=5.16e+06u as=0p ps=0u w=1e+06u l=150000u
+X6 vdd B m1_808_n747# XM6/w_n211_n319# sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X7 li_n700_n1900# A Y VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X8 m1_n32_n1450# E Y VSUBS sky130_fd_pr__nfet_01v8 ad=5.8e+11p pd=5.16e+06u as=0p ps=0u w=1e+06u l=150000u
+X9 Y C li_n700_n1900# VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X10 Y F m1_n32_n1450# VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X11 li_n700_n1900# D Y VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+C0 li_n700_n1900# XM6/w_n211_n319# 0.08fF
+C1 Y E 0.14fF
+C2 vdd XM6/w_n211_n319# 1.44fF
+C3 m1_n442_n748# A 0.00fF
+C4 B F 0.00fF
+C5 m1_808_n747# D 0.03fF
+C6 m1_n442_n748# C 0.04fF
+C7 XM6/w_n211_n319# E 0.28fF
+C8 m1_n442_n748# B 0.00fF
+C9 li_n700_n1900# m1_n864_n746# 0.00fF
+C10 li_n700_n1900# m1_808_n747# 0.00fF
+C11 vdd m1_n864_n746# 0.19fF
+C12 vdd m1_808_n747# 0.19fF
+C13 Y A 0.10fF
+C14 li_n700_n1900# D 0.05fF
+C15 m1_n32_n1450# F 0.03fF
+C16 vdd D 0.02fF
+C17 Y C 0.10fF
+C18 m1_n442_n748# F 0.08fF
+C19 Y B 0.10fF
+C20 XM6/w_n211_n319# A 0.28fF
+C21 E D 0.00fF
+C22 C XM6/w_n211_n319# 0.29fF
+C23 B XM6/w_n211_n319# 0.28fF
+C24 li_n700_n1900# E 0.00fF
+C25 vdd E 0.00fF
+C26 Y F 0.14fF
+C27 A m1_n864_n746# 0.03fF
+C28 Y m1_n32_n1450# 0.40fF
+C29 C m1_n864_n746# 0.03fF
+C30 m1_n442_n748# Y 0.47fF
+C31 XM6/w_n211_n319# F 0.28fF
+C32 m1_808_n747# B 0.03fF
+C33 B D 0.03fF
+C34 m1_n442_n748# XM6/w_n211_n319# 1.15fF
+C35 li_n700_n1900# A 0.04fF
+C36 vdd A 0.06fF
+C37 li_n700_n1900# C 0.05fF
+C38 C vdd 0.02fF
+C39 li_n700_n1900# B 0.05fF
+C40 vdd B 0.06fF
+C41 C E 0.03fF
+C42 F D 0.03fF
+C43 m1_n442_n748# m1_n864_n746# 0.16fF
+C44 m1_n442_n748# m1_808_n747# 0.16fF
+C45 Y XM6/w_n211_n319# 2.60fF
+C46 m1_n442_n748# D 0.04fF
+C47 li_n700_n1900# F 0.00fF
+C48 li_n700_n1900# m1_n32_n1450# 0.01fF
+C49 vdd F 0.00fF
+C50 li_n700_n1900# m1_n442_n748# 0.00fF
+C51 Y m1_n864_n746# 0.05fF
+C52 m1_n442_n748# vdd 0.31fF
+C53 Y m1_808_n747# 0.05fF
+C54 F E 0.03fF
+C55 C A 0.03fF
+C56 m1_n32_n1450# E 0.03fF
+C57 Y D 0.10fF
+C58 m1_n442_n748# E 0.08fF
+C59 XM6/w_n211_n319# m1_n864_n746# 0.24fF
+C60 m1_808_n747# XM6/w_n211_n319# 0.24fF
+C61 XM6/w_n211_n319# D 0.29fF
+C62 li_n700_n1900# Y 2.95fF
+C63 Y vdd 0.04fF
+C64 D VSUBS 0.22fF
+C65 F VSUBS 0.22fF
+C66 C VSUBS 0.22fF
+C67 m1_n32_n1450# VSUBS 0.08fF **FLOATING
+C68 E VSUBS 0.22fF
+C69 li_n700_n1900# VSUBS 0.41fF **FLOATING
+C70 A VSUBS 0.26fF
+C71 XM6/w_n211_n319# VSUBS 5.37fF **FLOATING
+C72 B VSUBS 0.26fF
+.ends

@@ -1,0 +1,25 @@
+* NGSPICE file created from fn.ext - technology: sky130A
+
+.subckt sky130_fd_pr__nfet_01v8_648S5X a_n73_n100# a_n33_n188# a_15_n100# a_n175_n274#
+X0 a_15_n100# a_n33_n188# a_n73_n100# a_n175_n274# sky130_fd_pr__nfet_01v8 ad=2.9e+11p pd=2.58e+06u as=2.9e+11p ps=2.58e+06u w=1e+06u l=150000u
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_XGS3BL a_n73_n100# a_15_n100# w_n211_n319# a_n33_n197#
+X0 a_15_n100# a_n33_n197# a_n73_n100# w_n211_n319# sky130_fd_pr__pfet_01v8 ad=2.9e+11p pd=2.58e+06u as=2.9e+11p ps=2.58e+06u w=1e+06u l=150000u
+.ends
+
+.subckt fn A C E F D B Y vdd
+Xsky130_fd_pr__nfet_01v8_648S5X_0 li_n700_n1900# B Y VSUBS sky130_fd_pr__nfet_01v8_648S5X
+XXM1 vdd m1_n864_n746# XM6/w_n211_n319# A sky130_fd_pr__pfet_01v8_XGS3BL
+XXM2 m1_n864_n746# m1_n442_n748# XM6/w_n211_n319# C sky130_fd_pr__pfet_01v8_XGS3BL
+XXM3 m1_n442_n748# Y XM6/w_n211_n319# E sky130_fd_pr__pfet_01v8_XGS3BL
+XXM4 Y m1_n442_n748# XM6/w_n211_n319# F sky130_fd_pr__pfet_01v8_XGS3BL
+XXM5 m1_n442_n748# m1_808_n747# XM6/w_n211_n319# D sky130_fd_pr__pfet_01v8_XGS3BL
+XXM6 m1_808_n747# vdd XM6/w_n211_n319# B sky130_fd_pr__pfet_01v8_XGS3BL
+XXM7 Y A li_n700_n1900# VSUBS sky130_fd_pr__nfet_01v8_648S5X
+XXM9 Y E m1_n32_n1450# VSUBS sky130_fd_pr__nfet_01v8_648S5X
+XXM8 li_n700_n1900# C Y VSUBS sky130_fd_pr__nfet_01v8_648S5X
+XXM10 m1_n32_n1450# F Y VSUBS sky130_fd_pr__nfet_01v8_648S5X
+XXM11 Y D li_n700_n1900# VSUBS sky130_fd_pr__nfet_01v8_648S5X
+.ends
+

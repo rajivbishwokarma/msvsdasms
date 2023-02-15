@@ -1,0 +1,48 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1676192621
+<< nwell >>
+rect 222 640 330 690
+<< pwell >>
+rect 222 160 330 210
+<< metal1 >>
+rect -50 1000 372 1058
+rect -10 830 40 1000
+rect 130 878 192 934
+rect -10 780 134 830
+rect 222 640 330 690
+rect 130 600 190 602
+rect 130 544 192 600
+rect 130 296 190 544
+rect 130 240 192 296
+rect 280 210 330 640
+rect 182 160 330 210
+rect -10 30 134 80
+rect -10 -140 40 30
+rect 130 -76 192 -20
+rect -50 -200 370 -140
+use sky130_fd_pr__pfet_01v8_XGS3BL  XM1
+timestamp 1676171943
+transform 1 0 161 0 1 739
+box -211 -319 211 319
+use sky130_fd_pr__nfet_01v8_648S5X  XM2
+timestamp 1676171943
+transform 1 0 161 0 1 110
+box -211 -310 211 310
+<< labels >>
+rlabel metal1 154 420 154 420 1 A
+port 1 n
+rlabel metal1 304 422 304 422 1 B
+port 2 n
+rlabel metal1 160 1036 160 1036 1 vdd
+port 3 n
+rlabel metal1 12 -36 12 -36 1 gnd_to_nmos
+rlabel metal1 62 56 62 56 1 nmos_to_gnd
+rlabel metal1 252 182 252 182 1 nmos_to_b
+rlabel metal1 268 662 268 662 1 pmos_to_b
+rlabel metal1 184 900 184 900 1 pmos_discon
+rlabel metal1 162 -72 162 -72 1 nmos_discon
+rlabel metal1 162 -176 162 -176 1 vss
+port 4 n
+<< end >>

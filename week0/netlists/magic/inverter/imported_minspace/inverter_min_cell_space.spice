@@ -1,0 +1,18 @@
+* SPICE3 file created from inverter_min_cell_space.ext - technology: sky130A
+
+.subckt inverter_min_cell_space A B vdd vss
+X0 B A vdd w_222_640# sky130_fd_pr__pfet_01v8 ad=2.9e+11p pd=2.58e+06u as=2.9e+11p ps=2.58e+06u w=1e+06u l=150000u
+X1 B A vss VSUBS sky130_fd_pr__nfet_01v8 ad=2.9e+11p pd=2.58e+06u as=2.9e+11p ps=2.58e+06u w=1e+06u l=150000u
+C0 A vss 0.15fF
+C1 vdd A 0.14fF
+C2 vdd w_222_640# 0.37fF
+C3 B vss 0.19fF
+C4 B vdd 0.18fF
+C5 A w_222_640# 0.37fF
+C6 B A 0.20fF
+C7 B w_222_640# 0.15fF
+C8 A VSUBS 0.46fF
+C9 B VSUBS 0.41fF
+C10 vss VSUBS 0.28fF
+C11 w_222_640# VSUBS 1.07fF **FLOATING
+.ends
