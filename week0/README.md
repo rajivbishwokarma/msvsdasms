@@ -5,11 +5,15 @@ As a preparation for the work, we are going to install the following software in
 <br>
 
 ## Table of Contents 
-| #  |         Topic          |   Description        |
-|:--:|:-------------------------:|:--------------------:|
-| 1  | Setting up the tools      | Set up all the software and PDK required for the following labs
-| 2  | Characterizing an inverter | Create an inverter in xschem and run simulation|
-
+| #  |         Topic          |   Description        | Status
+|:--:|:-------------------------:|:--------------------:|:-----:|
+| 1  | [Setting up the tools](https://github.com/rajivbishwokarma/msvsdasms/tree/master/week0#1-setting-up-the-tools)      | Set up all the software and PDK required for the following labs|:white_check_mark:|
+| 2  | [Pre-layout characterization of inverter using xschem and ngspice](https://github.com/rajivbishwokarma/msvsdasms/tree/master/week0#2-pre-layout-characterization-of-inverter-using-xschem-and-ngspice) | Create an inverter in xschem and run simulation|:white_check_mark:|
+| 3  | [Post-layout characterization of inverter using Magic, xschem, and ngspice](https://github.com/rajivbishwokarma/msvsdasms/tree/master/week0#3-post-layout-characterization-of-inverter-using-magic-xschem-and-ngspice) | Create layout and extract netlist to run simulation|:white_check_mark:|
+| 4  | [LVS of the Inverter](https://github.com/rajivbishwokarma/msvsdasms/tree/master/week0#4-lvs-of-the-inverter) | Run layout vs schematic for two netlists |:white_check_mark:|
+| 5  | [Pre-layout characterization of Fn using xchem and ngspice](https://github.com/rajivbishwokarma/msvsdasms/tree/master/week0#5-pre-layout-characterization-of-fn-using-xchem-and-ngspice) | Create Fn=[(B+D).(A+C)+E.F]' in xschem and run simulation |:large_orange_diamond:|
+| 6  | [Post-layout characterization of Fn using Magic, xschem and ngspice](https://github.com/rajivbishwokarma/msvsdasms/tree/master/week0#6-post-layout-characterization-of-fn-using-magic-xschem-and-ngspice) | Create layout and extract netlist to run simulation |:large_orange_diamond:|
+| 7  | [LVS of the Fn function](https://github.com/rajivbishwokarma/msvsdasms/tree/master/week0#7-lvs-of-the-fn-function) | Run layout vs schematic for two netlists of Fn|:large_orange_diamond:|
 
 
 
@@ -142,7 +146,7 @@ schematic2layout.py ../pdks/ALIGN-pdk-sky130/examples/telescopic_ota/ -p ../pdks
 
 <br><br>
 
-## 2. Characterizing an inverter
+## **2. Pre-layout characterization of inverter using xschem and ngspice**
 We will first create an inverter using the Sky130 PDK that we installed through the OpenPDK. To do that, let's first create an inverter. 
 
 <p align="center">
@@ -156,7 +160,7 @@ For the scematic above, we can create symbol in two ways. We generate the symbol
   <img width=500 src="./images/inverter_rb3.jpg">
 </p>
 
-When we create a custom symbol, we have to describe the global schematic property with something like given below. This is to make sure that SPICE recognizes our device when we use in our design. This can be set by clicking anywhere in the blank space and pressing **q** and entering the below informatin in the text box that appears as shown in the figure below.
+When we create a custom symbol, we have to describe the global schematic property as given below. This is to make sure that SPICE recognizes our device when we use it in our design. This can be set by clicking anywhere in the blank space and pressing **q** and entering the below informatin in the text box that appears as shown in the figure below.
 
 ```
 type=subcircuit
@@ -167,7 +171,7 @@ template="name=X1"
   <img width=600 src="./images/inverter_rb4.jpg">
 </p>
 
-I also created a buffer from the inverter that I created above as shown below. 
+I also created a buffer from the inverter as shown below (but have not done the simulation with it yet). 
 
 <p align="left">
   <img width=500 src="./images/buffer_level0.jpg">
@@ -180,29 +184,31 @@ Now, characterizing the inverter circuit with the following setup leads to the o
 In order to run the simulation, we have to add a **code** block with the following configuration. This is done so that SPICE can expand the sub-circuit call with the Sky130 library files.
 
 ```
-name=inverter_spice only_toplevel=false value="
-
+name=tt only_toplevel=false value="
 .lib /usr/local/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
-
-.control
-  dc V2 0 1.8 0.01
-  plot a b
-.endc
-
-.save all
 "
 ```
 
-Then, we can add the **code_shown** block with the following transient values. 
+Then, we can add following to the **code_shown** block with the to run a dc sweep analysis. 
 
 ```
-name=inverter_spice1 only_toplevel=false value=".tran 0.01n 1u
+name=inverter_spice only_toplevel=false value="
+.dc v2 0 1.8 0.01
+
+.control
+  run
+  plot a b
+.endc
+
 .save all"
 ```
 
-<p align="left">
-  <img width=500 src="./images/inverter_setup.jpg">
-  <img width=200 src="./images/inverter_setup_1.jpg">
+<p align="center">
+  <img width=800 src="./images/inverter_setup.jpg">
+</p>
+
+<p align="center">
+  <img width=400 src="./images/inverter_setup_1.jpg">
 </p>
 
 And, generating the netlist and running the simulation, we get the following output waveform.
@@ -212,29 +218,29 @@ And, generating the netlist and running the simulation, we get the following out
 </p>
 
 
-### **Inverter layout with Magic**
+<br><br>
 
-We first create an inverter in Magic and extract the SPICE netlist.
+## **3. Post-layout characterization of inverter using Magic, xschem, and ngspice**
+
+We can either create an inverter in Magic from scratch and then extract the SPICE netlist as shown below, or we can import the netlist generated by xschem and then route the cells as shown in the next screenshot.
+
 <p align="center">
   <img width=800 src="./images/inverter_layout_rb1.jpg">
 </p>
 
-TThen we extract the netlist using the following commands. 
+<p align="center">
+  <img width=800 src="./images/magic_xschem_layout.jpg">
+</p>
+
+Then we extract the netlist using the following commands. 
 ```
 extract all
 ext2spice cthresh 0 rthresh 0
 ext2spice
 ```
-
 And we get the netlist for SPICE simulation.
 
 Now, in order to run the post-layout simulation, we have to include this netlist in the xschem testbench shown above. To do that, we need to change which netlist **xschem** calls when it launches the simulation. 
-
-Now open the symbol file (.sym) for the inverter that you generated and press **Q** to edit the global property in the schematic and you will get the property list, now edit as shown below. 
-
-<p align="center">
-  <img width=400 src="./images/inverter_primative.jpg">
-</p>
 
 Now, we will import this symbol to the testbench and add SPICE include command to include the newly generated spice.
 
@@ -244,36 +250,60 @@ Now, we will import this symbol to the testbench and add SPICE include command t
 
 The inverter_spice code includes the directory to the Sky130 spice model files
 ```
-name=inverter_spice only_toplevel=false value=
-
+name=tt only_toplevel=false value=
 "
 .lib /usr/local/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
 "
 ```
 
 <p align="center">
-  <img width=400 src="./images/inverter_layout_xschem.jpg">
+  <img width=400 src="./images/magic_xschem_layout_sim.jpg">
 </p>
 
-:construction: There is an error in the output simulation waveform, fixing it.
+We get the following waveform, similar to what we got in the pre-layout simulation.
 
 <p align="center">
-  <img width=400 src="./images/inverter_spice_error.jpg">
+  <img width=800 src="./images/magic_xschem_layout_waveform_manualspice.jpg">
+</p>
+
+Also doing a transient simulation to the input gate, we get the following waveform.
+
+<p align="center">
+  <img width=800 src="./images/magic_xschem_layout_tran.jpg">
 </p>
 
 This concludes the post-layout characterization of the inverter. 
 
+## **3.5 Comparison between pre-layout and post-layout simulations**
+Two waveforms, side by side, are shown in the figure below. The general nature of the curves vary slightly in the two graphs (see the zommed in sections in the two smaller windows). 
 
-## LVS
+<p align="center">
+  <img width=800 src="./images/pre-post-layout-comparision.jpg">
+</p>
 
-The lvs done on the two circuits outputs the following results. 
+
+
+## **4. LVS of the Inverter**
+
+To run LVS, we first have to extract the netlist from layout in a different way using the following command. 
+
+```
+extract all
+ext2spice lvs
+ext2spice
+```
+
+This generates the netlist that xschem can compare one to one with the netlist generated from schematic. The lvs done on the two circuits outputs the following results. 
+
 <p align="center">
   <img width=800 src="./images/lvs.jpg">
 </p>
 
-## Pre-layout and post-layout simulation for Fn
+## **5. Pre-layout characterization of Fn using xchem and ngspice**
 
 Now, we will run a pre-layout and post-layout simulation for a custom function defined by:
+
+$$ F_n = \overline{(B + D) \cdot (A + C)} + (E \cdot F)  $$
 
 ```
 Fn = [(B + D) . (A + C) + E.F]'
@@ -282,29 +312,33 @@ Fn = [(B + D) . (A + C) + E.F]'
 We first draw the schematic circuit in **xschem** and then create a test circuit for the schematic. We get [this](./netlists/fn.spice) netlist from the current circuit. 
 
 <p align="center">
-  <img width=600 src="./images/fn_xschem.jpg">
+  <img src="./images/fn_xschem.jpg">
 </p>
 
 <p align="center">
-  <img width=600 src="./images/fn_spice.jpg">
+  <img src="./images/fn_spice.jpg">
 </p>
 
-After verifying the simulation results, we will then move on to the layout design of the circuit. We first import and arrange the transistors generated by **xschem**.
+After verifying the simulation results, we will then move on to the layout design of the circuit. 
+
+## **6. Post-layout characterization of Fn using Magic, xschem and ngspice**
+
+We first import and arrange the transistors generated by **xschem**. The layout are designed based on the Euler-path obtained from the PMOS and NMOS networks. In this case, the optimal path was found to be **A-C-E-F-D-B**.
 
 <p align="center">
-  <img width=800 src="./images/fn_layout.jpg">
+  <img src="./images/fn_layout.jpg">
 </p>
 
 :construction: Then we route connections in the design.
 
 <p align="center">
-  <img width=800 src="./images/fn_layout.jpg">
+  <img src="./images/fn_layout.jpg">
 </p>
 
 Alternatively, we can create the layout completely from scratch using the standard paint feature in **Magic** as shown below.
 
 <p align="center">
-  <img width=800 src="./images/fn_layout2.jpg">
+  <img src="./images/fn_layout2.jpg">
 </p>
 
 Then we can extract the netlist from this design using the following commands. 
@@ -315,3 +349,8 @@ ext2spice
 ```
 
 We get [this](./netlists/fnc.spice) netlist.
+
+And, to do the post-layout simulation of this circuit. We repeat the same steps that we did with the inverter. Instead of defining global property of the symbol as 'subcircuit', we define it as 'primitive' and link the [**Magic** generated SPICE netlist](./netlists/fnc.spice).
+
+## **7. LVS of the Fn function**
+We then finally run the LVS for the Fn layout and schematic.
