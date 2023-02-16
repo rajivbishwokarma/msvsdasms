@@ -95,7 +95,7 @@ This will generate the layout of the inverter as can be seen below.
 ## **2. Inverter: Post-layout simulation of ALIGN generated layout**
 
 
-This GDS can be opened using magic. We simply have to open **Magic** using the technology file and then use the **Read GDS** option.
+The GDS2 file that we generated with ALIGN can be opened using magic. We simply have to open **Magic** using the sky130.tech technology file and then use the **Read GDS** option.
 
 ```
 magic -d OGL -T ~/work/open_pdks/sky130/sky130A/libs.tech/magic/sky130A.tech &
