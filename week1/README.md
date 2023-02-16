@@ -1,5 +1,3 @@
-[ :construction: The links are currently broken.]
-
 # Setup and Preparation
 
 As a preparation for the work, we are going to install the following software in **Ubuntu 20.04**. I created the scripts in the following numbered order, it is best if they are run in the same order.
