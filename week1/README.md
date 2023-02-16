@@ -170,7 +170,7 @@ And, doing a transient analysis generates the following output waveform.
 <br><br>
 ## **4. Fn: generating GDS2 file from netlist**
 
-[Previously](), we did a pre-layout (using xschem) and post-layout (using Magic) simulation of the following function.
+[Previously](../week0/README.md), we did a pre-layout (using xschem) and post-layout (using Magic) simulation of the following function.
 
 $$ F_n = \overline{(B + D) \cdot (A + C) + (E \cdot F)}  $$
 
