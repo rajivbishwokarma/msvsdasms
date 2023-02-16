@@ -1,0 +1,30 @@
+* SPICE3 file created from INVERTER_0.ext - technology: sky130A
+
+.option scale=5000u
+
+X0 B A VSS VSS sky130_fd_pr__nfet_01v8 ad=58800 pd=2660 as=69300 ps=3180 w=210 l=30
+X1 B A VSS VSS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=210 l=30
+X2 VSS A B VSS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=210 l=30
+X3 VSS A B VSS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=210 l=30
+X4 B A VSS VSS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=210 l=30
+X5 B A VSS VSS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=210 l=30
+X6 VSS A B VSS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=210 l=30
+X7 B A VSS VSS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=210 l=30
+X8 VSS A B VSS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=210 l=30
+X9 VSS A B VSS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=210 l=30
+X10 B A VDD VDD sky130_fd_pr__pfet_01v8 ad=117600 pd=4760 as=138600 ps=5700 w=420 l=30
+X11 VDD A B VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=420 l=30
+X12 VDD A B VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=420 l=30
+X13 B A VDD VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=420 l=30
+X14 B A VDD VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=420 l=30
+X15 VDD A B VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=420 l=30
+X16 VDD A B VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=420 l=30
+X17 B A VDD VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=420 l=30
+X18 B A VDD VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=420 l=30
+X19 VDD A B VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=420 l=30
+C0 VDD A 3.05fF
+C1 VDD B 4.20fF
+C2 B A 1.43fF
+C3 B VSS 3.50fF **FLOATING
+C4 A VSS 2.97fF **FLOATING
+C5 VDD VSS 9.40fF **FLOATING
