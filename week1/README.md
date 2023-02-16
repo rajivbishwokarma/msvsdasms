@@ -210,11 +210,14 @@ M12 net5 F GND GND sky130_fd_pr__nfet_01v8 L=150e-9 W=10.5e-7 nf=10 m=1
 .ends
 ```
 
-Running, ALIGN generates the following error.
+[Issue]() Running, ALIGN generates the following error.
 
 <p align="center">
-  <img width=800 src="./images/align-fn-error.jpg">
+  <img src="./images/align-fn-error.jpg">
 </p>
 
-This needs to be investigated. 
+This needs to be investigated further. 
 
+:triangular_flag_on_post: :warning: :construction:
+
+[Update]() Running the ALIGN tool using the above netlist but with metal layers equal to 8 (m=8) creates make the ILP_solver stuck trying to place the components. 
