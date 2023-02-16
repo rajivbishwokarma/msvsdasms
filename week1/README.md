@@ -2,7 +2,7 @@
 | #  |         Topic          |   Description        | Status
 |:--:|:-------------------------:|:--------------------:|:-----:|
 | 1  | [Inverter: generating GDS2 using ALIGN](https://github.com/rajivbishwokarma/msvsdasms/tree/master/week1#1-generating-gds2-file-from-spice-netlist)      | Creating GDS2 file from the spice netlist using ALIGN |:large_orange_diamond:|
-| 2  | [Inverter: Post-layout simulation of ALIGN generated layout]()      | Extracting netlist and doing post-layout simulation |:large_orange_diamond:|
+| 2  | [Inverter: Post-layout simulation of ALIGN generated layout](https://github.com/rajivbishwokarma/msvsdasms/tree/master/week1#2-inverter-post-layout-simulation-of-align-generated-layout)      | Extracting netlist and doing post-layout simulation |:large_orange_diamond:|
 | 3  | [3. Comparision of pre-layout (xschem) and post-layout (Magic and ALIGN) outputs for Inverter](https://github.com/rajivbishwokarma/msvsdasms/tree/master/week1#3-comparision-of-pre-layout-xschem-and-post-layout-magic-and-align-outputs-for-inverter)      | Comparing the output waveform out of obtained from all three software |:large_orange_diamond:|
 | 4  | [Fn: generating GDS2 using ALIGN](https://github.com/rajivbishwokarma/msvsdasms/tree/master/week1#4-fn-generating-gds2-file-from-netlist)      | Creating GDSII file from the spice netlist using ALIGN |:large_orange_diamond:|
 | 5  | [Fn: Post-layout simulation of ALIGN generated layout]()      | Extracting netlist and doing post-layout simulation |:large_orange_diamond:|
