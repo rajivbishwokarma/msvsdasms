@@ -337,7 +337,7 @@ Then we route connections in the design.
   <img src="./images/magic_fn_layout.jpg">
 </p>
 
-We can then extract [this]() netlist from the above layout. Alternatively, we can create the layout completely from scratch using the standard paint feature in **Magic** as shown below.
+We can then extract [this](./netlists/magic/fn/imported/fn.spice) netlist from the above layout. Alternatively, we can create the layout completely from scratch using the standard paint feature in **Magic** as shown below.
 
 <p align="center">
   <img src="./images/fn_layout2.jpg">
@@ -350,6 +350,6 @@ ext2spice cthresh 0 rthresh 0
 ext2spice
 ```
 
-We get [this](./netlists/magic_postlayout/fn/custom/fnc.spice) netlist from the second layout.
+We get [this](./netlists/magic/fn/custom/fnc.spice) netlist from the second layout.
 
 And, to do the post-layout simulation of this circuit. We repeat the same steps that we did with the inverter. We will continue this in the next module.
