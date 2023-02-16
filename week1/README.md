@@ -211,7 +211,7 @@ M12 net5 F GND GND sky130_fd_pr__nfet_01v8 L=150e-9 W=10.5e-7 nf=10 m=1
 ```
 
 #
-[Issue]() Running, ALIGN generates the following error.
+[#Issue-2](https://github.com/rajivbishwokarma/msvsdasms/issues/2) Running, ALIGN generates the following error.
 
 <p align="center">
   <img src="./images/align-fn-error.jpg">
