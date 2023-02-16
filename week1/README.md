@@ -220,4 +220,4 @@ This needs to be investigated further.
 
 :triangular_flag_on_post: :warning: :construction:
 
-[Update]() Running the ALIGN tool using the above netlist but with metal layers equal to 8 (m=8) creates make the ILP_solver stuck trying to place the components. 
+[Update]() Running the ALIGN tool using the above netlist but with metal layers equal to 8 (m=8) makes the ILP_solver stuck trying to place the components. 
