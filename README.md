@@ -9,8 +9,8 @@
 
 | Week Number |         Topic                                |   Status             |
 |:-----------:|:--------------------------------------------:|:--------------------:|
-| 0           | [Setup and Preparation](./week0)   |    :construction:    |
-| 1           |                       |                      |
+| 0           | [Setup and Preparation](./week0)   |:white_check_mark:|
+| 1           | [Post-layout with Magic, and ALIGN suite](./week1)   |    :large_orange_diamond:|
 | 2           |                       |                      |
 | 3           |                       |                      |
 | 4           |                       |                      |
