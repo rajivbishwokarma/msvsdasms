@@ -277,7 +277,7 @@ To get this waveform
 We got the following output waveform by simulating the [MAGIC extracted SPICE netlist]().
 
 <p align="center">
-  <img width=800 src="./images/fn-postlayout-magic.jpg">
+  <img width=800 src="./images/fn-magic-postlayout.jpg">
 </p>
 
 We got the following output waveform by simulating the [ALIGN generated SPICE netlist]().
