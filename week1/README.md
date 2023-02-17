@@ -169,6 +169,11 @@ And, doing a transient analysis generates the following output waveform.
 
 ## **3. Comparision of pre-layout (xschem) and post-layout (Magic and ALIGN) outputs for Inverter**
 
+<p align="center">
+  <img width=300 src="./images/align-inverter-waveform-pwl.jpg">
+  <img width=300 src="./images/align-inverter-waveform-pwl.jpg">
+  <img width=300 src="./images/align-inverter-waveform-pwl.jpg">
+</p>
 
 
 
