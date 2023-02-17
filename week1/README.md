@@ -5,8 +5,8 @@
 | 2  | [Inverter: Post-layout simulation of ALIGN generated layout](https://github.com/rajivbishwokarma/msvsdasms/tree/master/week1#2-inverter-post-layout-simulation-of-align-generated-layout)      | Extracting netlist and doing post-layout simulation |:white_check_mark:|
 | 3  | [3. Comparision of pre-layout (xschem) and post-layout (Magic and ALIGN) outputs for Inverter](https://github.com/rajivbishwokarma/msvsdasms/tree/master/week1#3-comparision-of-pre-layout-xschem-and-post-layout-magic-and-align-outputs-for-inverter)      | Comparing the output waveform out of obtained from all three software |:large_orange_diamond:|
 | 4  | [$F_n$: generating GDS2 using ALIGN](https://github.com/rajivbishwokarma/msvsdasms/tree/master/week1#4-fn-generating-gds2-file-from-netlist)      | Creating GDSII file from the spice netlist using ALIGN |:white_check_mark:|
-| 5  | [$F_n$: Post-layout simulation of ALIGN generated layout]()      | Extracting netlist and doing post-layout simulation |:large_orange_diamond:|
-| 6  | [$F_n$: Comparision of pre-layout (Xschem) and post-layout (Magic, ALIGN) simulation]()      | Extracting netlist and doing post-layout simulation |:large_orange_diamond:|
+| 5  | [$F_n$: Post-layout simulation of ALIGN generated layout](https://github.com/rajivbishwokarma/msvsdasms/tree/master/week1#5-f_n-post-layout-simulation-of-align-generated-layouthttps://github.com/rajivbishwokarma/msvsdasms/tree/master/week1#5-f_n-post-layout-simulation-of-align-generated-layout)      | Extracting netlist and doing post-layout simulation |:large_orange_diamond:|
+| 6  | [$F_n$: Comparision of pre-layout (Xschem) and post-layout (Magic, ALIGN) simulation](https://github.com/rajivbishwokarma/msvsdasms/tree/master/week1#6-f_n-comparision-of-pre-layout-xschem-and-post-layout-magic-align-simulation)      | Extracting netlist and doing post-layout simulation |:large_orange_diamond:|
 
 
 <br><br><br>
@@ -271,8 +271,6 @@ We got the following output waveform by simulating the [Xschem generated netlist
 <p align="center">
   <img width=800 src="./images/ngspice-fn.jpg">
 </p>
-
-To get this waveform 
 
 We got the following output waveform by simulating the [MAGIC extracted SPICE netlist]().
 
