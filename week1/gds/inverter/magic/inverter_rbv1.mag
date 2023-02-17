@@ -1,0 +1,110 @@
+magic
+tech sky130A
+timestamp 1675986032
+<< nwell >>
+rect -30 95 160 235
+<< nmos >>
+rect 80 -40 95 60
+<< pmos >>
+rect 80 115 95 215
+<< ndiff >>
+rect 35 45 80 60
+rect 35 -25 45 45
+rect 70 -25 80 45
+rect 35 -40 80 -25
+rect 95 45 140 60
+rect 95 -25 105 45
+rect 130 -25 140 45
+rect 95 -40 140 -25
+<< pdiff >>
+rect 35 200 80 215
+rect 35 130 45 200
+rect 70 130 80 200
+rect 35 115 80 130
+rect 95 200 140 215
+rect 95 130 105 200
+rect 130 130 140 200
+rect 95 115 140 130
+<< ndiffc >>
+rect 45 -25 70 45
+rect 105 -25 130 45
+<< pdiffc >>
+rect 45 130 70 200
+rect 105 130 130 200
+<< psubdiff >>
+rect -10 45 35 60
+rect -10 -25 0 45
+rect 25 -25 35 45
+rect -10 -40 35 -25
+<< nsubdiff >>
+rect -10 200 35 215
+rect -10 130 0 200
+rect 25 130 35 200
+rect -10 115 35 130
+<< psubdiffcont >>
+rect 0 -25 25 45
+<< nsubdiffcont >>
+rect 0 130 25 200
+<< poly >>
+rect 80 215 95 230
+rect 80 60 95 115
+rect 80 -55 95 -40
+rect 55 -65 95 -55
+rect 55 -85 65 -65
+rect 85 -85 95 -65
+rect 55 -95 95 -85
+<< polycont >>
+rect 65 -85 85 -65
+<< locali >>
+rect -5 200 75 210
+rect -5 130 0 200
+rect 25 130 45 200
+rect 70 130 75 200
+rect -5 120 75 130
+rect 100 200 135 210
+rect 100 130 105 200
+rect 130 130 135 200
+rect 100 120 135 130
+rect 115 55 135 120
+rect -5 45 75 55
+rect -5 -25 0 45
+rect 25 -25 45 45
+rect 70 -25 75 45
+rect -5 -35 75 -25
+rect 100 45 135 55
+rect 100 -25 105 45
+rect 130 -25 135 45
+rect 100 -35 135 -25
+rect 115 -55 135 -35
+rect -30 -65 95 -55
+rect -30 -75 65 -65
+rect 55 -85 65 -75
+rect 85 -85 95 -65
+rect 115 -75 160 -55
+rect 55 -95 95 -85
+<< viali >>
+rect 0 130 25 200
+rect 45 130 70 200
+rect 0 -25 25 45
+rect 45 -25 70 45
+<< metal1 >>
+rect -30 200 160 205
+rect -30 130 0 200
+rect 25 130 45 200
+rect 70 130 160 200
+rect -30 125 160 130
+rect -30 45 160 50
+rect -30 -25 0 45
+rect 25 -25 45 45
+rect 70 -25 160 45
+rect -30 -30 160 -25
+<< labels >>
+rlabel locali -30 -65 -30 -65 7 A
+port 1 w
+rlabel locali 160 -65 160 -65 3 Y
+port 2 e
+rlabel metal1 -30 165 -30 165 7 v+
+port 3 w
+rlabel metal1 -30 10 -30 10 7 0
+port 4 w
+<< end >>

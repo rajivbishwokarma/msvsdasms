@@ -1,0 +1,17 @@
+* NGSPICE file created from fnc.ext - technology: sky130A
+
+.subckt fn_custom A C E F D B gnd vdd Fn
+X0 vdd F a_190_270# vdd sky130_fd_pr__pfet_01v8 ad=1.95e+12p pd=1.19e+07u as=5e+11p ps=3e+06u w=1e+06u l=150000u
+X1 a_190_270# E vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X2 a_n70_270# A vdd vdd sky130_fd_pr__pfet_01v8 ad=5e+11p pd=3e+06u as=0p ps=0u w=1e+06u l=150000u
+X3 gnd F a_190_n70# Fn sky130_fd_pr__nfet_01v8 ad=1e+12p pd=6e+06u as=5e+11p ps=3e+06u w=1e+06u l=150000u
+X4 vdd B a_450_270# vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=5e+11p ps=3e+06u w=1e+06u l=150000u
+X5 a_190_n70# E Fn Fn sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=9.5e+11p ps=5.9e+06u w=1e+06u l=150000u
+X6 a_450_270# D vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X7 a_n70_n70# A Fn Fn sky130_fd_pr__nfet_01v8 ad=1e+12p pd=6e+06u as=0p ps=0u w=1e+06u l=150000u
+X8 gnd B a_n70_n70# Fn sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X9 a_n70_n70# D gnd Fn sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X10 vdd C a_n70_270# vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X11 Fn C a_n70_n70# Fn sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+.ends
+
