@@ -284,5 +284,5 @@ We got the following output waveform by simulating the [ALIGN generated SPICE ne
 
 [ :construction: Wrong output, Needs fixing]
  <p align="center">
-  <img width=800 src="./images/wrong-align-waveform.jpg">
+  <img width=800 src="./images/fn-postlayout-align.jpg">
 </p>
