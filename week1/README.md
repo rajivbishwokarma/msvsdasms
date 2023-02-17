@@ -1,10 +1,10 @@
 ## Table of Contents 
 | #  |         Topic          |   Description        | Status
 |:--:|:-------------------------:|:--------------------:|:-----:|
-| 1  | [Inverter: generating GDS2 using ALIGN](https://github.com/rajivbishwokarma/msvsdasms/tree/master/week1#1-generating-gds2-file-from-spice-netlist)      | Creating GDS2 file from the spice netlist using ALIGN |:large_orange_diamond:|
-| 2  | [Inverter: Post-layout simulation of ALIGN generated layout](https://github.com/rajivbishwokarma/msvsdasms/tree/master/week1#2-inverter-post-layout-simulation-of-align-generated-layout)      | Extracting netlist and doing post-layout simulation |:large_orange_diamond:|
+| 1  | [Inverter: generating GDS2 using ALIGN](https://github.com/rajivbishwokarma/msvsdasms/tree/master/week1#1-generating-gds2-file-from-spice-netlist)      | Creating GDS2 file from the spice netlist using ALIGN |:white_check_mark:|
+| 2  | [Inverter: Post-layout simulation of ALIGN generated layout](https://github.com/rajivbishwokarma/msvsdasms/tree/master/week1#2-inverter-post-layout-simulation-of-align-generated-layout)      | Extracting netlist and doing post-layout simulation |:white_check_mark:|
 | 3  | [3. Comparision of pre-layout (xschem) and post-layout (Magic and ALIGN) outputs for Inverter](https://github.com/rajivbishwokarma/msvsdasms/tree/master/week1#3-comparision-of-pre-layout-xschem-and-post-layout-magic-and-align-outputs-for-inverter)      | Comparing the output waveform out of obtained from all three software |:large_orange_diamond:|
-| 4  | [Fn: generating GDS2 using ALIGN](https://github.com/rajivbishwokarma/msvsdasms/tree/master/week1#4-fn-generating-gds2-file-from-netlist)      | Creating GDSII file from the spice netlist using ALIGN |:large_orange_diamond:|
+| 4  | [Fn: generating GDS2 using ALIGN](https://github.com/rajivbishwokarma/msvsdasms/tree/master/week1#4-fn-generating-gds2-file-from-netlist)      | Creating GDSII file from the spice netlist using ALIGN |:white_check_mark:|
 | 5  | [Fn: Post-layout simulation of ALIGN generated layout]()      | Extracting netlist and doing post-layout simulation |:large_orange_diamond:|
 
 <br><br><br>
@@ -241,7 +241,9 @@ ext2spice
 
 After extracting the netlist using Magic, we get the netlist [align/FN_SIM_0.spice](./netlists/fn/align/FN_SIM_0.spice) as output. And, we can remove the capacitances that are floating in the circuit and then we can add in some power sources to run the simulation as shown in [ngspice/FN_SIM_0](./netlists/fn/ngspice/FN_SIM_0.spice). Running the simulation we get the following output.
 
-[ :construction: Wrong output, fixing]
+[ :construction: Wrong output, currently fixing]
 
 
-
+<p align="center">
+  <img width=800 src="./images/wrong-align-waveform.jpg">
+</p>
