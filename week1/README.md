@@ -239,4 +239,9 @@ ext2spice
 
  ## **5. $F_n$: Post-layout simulation of ALIGN generated layout**
 
- 
+After extracting the netlist using Magic, we get the netlist [align/FN_SIM_0.spice](./netlists/fn/align/FN_SIM_0.spice) as output. And, we can remove the capacitances that are floating in the circuit and then we can add in some power sources to run the simulation as shown in [ngspice/FN_SIM_0](./netlists/fn/ngspice/FN_SIM_0.spice). Running the simulation we get the following output.
+
+[ :construction: Wrong output, fixing]
+
+
+

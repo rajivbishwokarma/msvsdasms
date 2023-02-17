@@ -275,12 +275,12 @@ C32 VDD VSUBS 0.08fF
 
 
 
-** V1 A 0 pwl(0 0 5n 0 5.1n 1.8 10n 1.8v)
-** V2 B 0 pwl(0 1.8v 5.1n 1.8v 5.2n 0 10n 0)
-** V3 C 0 pwl(0 1.8v 5.2n 1.8v 5.3n 0 10n 0)
-** V4 D 0 pwl(0 1.8v 5.3n 1.8v 5.4n 0 10n 0)
-** V5 E 0 pwl(0 1.8v 5.4n 1.8v 5.5n 0 10n 0)
-** V6 F 0 pwl(0 0 5.6n 0 5.7n 1.8v 10n 1.8v)
+V1 A 0 pwl(0 0 5n 0 5.1n 1.8 10n 1.8v)
+V2 B 0 pwl(0 1.8v 5.1n 1.8v 5.2n 0 10n 0)
+V3 C 0 pwl(0 1.8v 5.2n 1.8v 5.3n 0 10n 0)
+V4 D 0 pwl(0 1.8v 5.3n 1.8v 5.4n 0 10n 0)
+V5 E 0 pwl(0 1.8v 5.4n 1.8v 5.5n 0 10n 0)
+V6 F 0 pwl(0 0 5.6n 0 5.7n 1.8v 10n 1.8v)
 VDD VDD 0 1.8
 
 
