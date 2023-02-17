@@ -169,13 +169,21 @@ And, doing a transient analysis generates the following output waveform.
 
 ## **3. Comparision of pre-layout (xschem) and post-layout (Magic and ALIGN) outputs for Inverter**
 
+As can be seen from the images below, the pre-layout and post-layout simulations produce similar nature of the waveforms, only difference being the actual delay time. 
+
 <p align="center">
-  <img width=300 src="./images/align-inverter-waveform-pwl.jpg">
+  <img width=600 src="./images/inverter-prelayout-xschem.jpg">
   <img width=300 src="./images/align-inverter-waveform-pwl.jpg">
   <img width=300 src="./images/align-inverter-waveform-pwl.jpg">
 </p>
 
-
+| Timing threshold variables  | Pre-layout | Post-layout (Magic)| Post-layout (ALIGN)|
+|:---------------------------:|:----------:|:------------------:|:------------------:|
+|slew_high_rise_thr (0.8*VDD) |   254ps    |                    |                    |
+|slew_low_rise_thr (0.2*VDD)  |   100ps    |                    |                    |
+|slew_high_fall_thr (0.8*VDD) |   400ps    |                    |                    |
+|slew_low_fall_thr (0.2*VDD)  |   280ps    |                    |                    |
+|delay                        |            |                    |                    |
 
 <br><br>
 ## **4. Fn: generating GDS2 file from netlist**
