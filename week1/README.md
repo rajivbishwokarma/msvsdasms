@@ -173,8 +173,8 @@ As can be seen from the images below, the pre-layout and post-layout simulations
 
 <p align="center">
   <img width=600 src="./images/inverter-prelayout-xschem.jpg">
-  <img width=300 src="./images/align-inverter-waveform-pwl.jpg">
-  <img width=300 src="./images/align-inverter-waveform-pwl.jpg">
+  <img width=600 src="../week0/images/magic_xschem_layout_waveform_manualspice.jpg">
+  <img width=600 src="./images/align-inverter-waveform-pwl.jpg">
 </p>
 
 | Timing threshold variables  | Pre-layout | Post-layout (Magic)| Post-layout (ALIGN)|
