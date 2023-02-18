@@ -9,9 +9,9 @@
 
 | Week Number |         Topic                                |   Status             |
 |:-----------:|:--------------------------------------------:|:--------------------:|
-| 0           | [Setup and Preparation](./week0)   |:white_check_mark:|
-| 1           | [Post-layout with Magic, and ALIGN suite](./week1)   |    :large_orange_diamond:|
-| 2           |                       |                      |
+| 0           | [Setting up tools and Preparation](./week0)   |:white_check_mark:|
+| 1           | [Post-layout with Magic, and ALIGN suite](./week1)   |    :white_check_mark:|
+| 2           | [Setting up OpenFASoc](./week2)   |    :large_orange_diamond:|
 | 3           |                       |                      |
 | 4           |                       |                      |
 | 5           |                       |                      |
