@@ -256,11 +256,8 @@ ext2spice
 
 After extracting the netlist using Magic, we get the netlist [align/FN_SIM_0.spice](./netlists/fn/align/FN_SIM_0.spice) as output. And, we can remove the capacitances that are floating in the circuit and then we can add in some power sources to run the simulation as shown in [ngspice/FN_SIM_0](./netlists/fn/ngspice/FN_SIM_0.spice). Running the simulation we get the following output.
 
-[ :construction: Wrong output, currently fixing]
-
-
 <p align="center">
-  <img width=800 src="./images/wrong-align-waveform.jpg">
+  <img width=800 src="./images/fn-align-correct-output.jpg">
 </p>
 
 <br><br><br>
@@ -280,7 +277,10 @@ We got the following output waveform by simulating the [MAGIC extracted SPICE ne
 
 We got the following output waveform by simulating the [ALIGN generated SPICE netlist]().
 
-[ :construction: Wrong output, Needs fixing]
+<p align="center">
+  <img width=800 src="./images/fn-align-correct-input-output.jpg">
+</p>
+
  <p align="center">
-  <img width=800 src="./images/fn-postlayout-align.jpg">
+  <img width=800 src="./images/fn-align-correct-output.jpg">
 </p>
