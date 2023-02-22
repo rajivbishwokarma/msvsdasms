@@ -2,6 +2,7 @@
 | #  |         Topic          |   Description        | Status
 |:--:|:-------------------------:|:--------------------:|:-----:|
 | 1  | [Setting up OpenFASoC]()      | Installing OpenFASoC and all its dependencies |:white_check_mark:|
+| 2  | [Generating temperature sensor layout]()      | Installing OpenFASoC and all its dependencies |:large_orange_diamond:|
 
 
 
@@ -22,6 +23,20 @@ I found it easier to install [Anaconda](https://www.anaconda.com/products/distri
 ```
 # Create the environment with Python 3.7
 conda create -n openfasoc python=3.7
+
 # Activate the environment
 conda activate openfasoc
 ```
+
+OpenFASoC is a set of python scripts put together to run a complete flow. So, clone the OpenFASoC repo using the following command. 
+
+```
+# -j8 only works if the Git is 2.8+
+git clone --recurse-submodules -j8 https://github.com/idea-fasoc/OpenFASOC.git
+```
+
+<br><br>
+
+## **2. Generating temperature sensor layout**
+
+We have everything we need, so we can go ahead and run a test generator to generate a layout for [temperature sensor]() provided with OpenFASoC.
