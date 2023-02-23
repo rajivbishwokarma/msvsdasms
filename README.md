@@ -11,8 +11,8 @@
 |:-----------:|:--------------------------------------------:|:--------------------:|
 | 0           | [Setting up tools and Preparation](./week0)   |:white_check_mark:|
 | 1           | [Post-layout with Magic, and ALIGN suite](./week1)   |    :white_check_mark:|
-| 2           | [Setting up OpenFASoc](./week2)   |    :large_orange_diamond:|
-| 3           |                       |                      |
+| 2           | [Generating temperature sensor layout using OpenFASoc](./week2)   |    :white_check_mark:|
+| 3           |                       | :large_orange_diamond:   |
 | 4           |                       |                      |
 | 5           |                       |                      |
 | 6           |                       |                      |
