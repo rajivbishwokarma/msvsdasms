@@ -3,7 +3,7 @@
 |:--:|:-------------------------:|:--------------------:|:-----:|
 | 1  | [Setting up OpenFASoC]()      | Installing OpenFASoC and all its dependencies |:white_check_mark:|
 | 2  | [Configuring the Sky130A path]()      | Configuring the Sky130A path in the platform_config.json |:white_check_mark:|
-| 3  | [Generating temperature sensor layout]()      | Installing OpenFASoC and all its dependencies |:large_orange_diamond:|
+| 3  | [Generating temperature sensor layout]()      | Installing OpenFASoC and all its dependencies |:white_check_mark:|
 
 
 
