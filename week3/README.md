@@ -1,10 +1,10 @@
 ## Table of Contents 
 | #  |         Topic          |   Description        | Status
 |:--:|:-------------------------:|:--------------------:|:-----:|
-| 1  | [Three-stage ring oscillator design in Xschem]()      | Creating schematic circuit and simulatin it |:white_check_mark:|
-| 2  | [Generating layout for ring oscillator using ALIGN]()      | Passing the xschem generated spice into ALIGN |:large_orange_diamond:|
-| 3  | [Creating a manual layout for the ring oscillator using Magic]()      | Importing the xschem generated spice into Magic and routing the cells |:white_check_mark:|
-| 4  | [Analaysis of the ring oscillator pre-layout and post-layout results]()      | Comparing pre-layout (Xschem) and post-layout (ALIGN, Magic) outputs |:large_orange_diamond:|
+| 1  | [Three-stage ring oscillator design in Xschem](https://github.com/rajivbishwokarma/msvsdasms/tree/master/week3#1-three-stage-ring-oscillator-design-in-xschem)      | Creating schematic circuit and simulatin it |:white_check_mark:|
+| 2  | [Generating layout for ring oscillator using ALIGN](https://github.com/rajivbishwokarma/msvsdasms/tree/master/week3#2-generating-layout-for-ring-oscillator-using-align)      | Passing the xschem generated spice into ALIGN |:large_orange_diamond:|
+| 3  | [Creating a manual layout for the ring oscillator using Magic](https://github.com/rajivbishwokarma/msvsdasms/tree/master/week3#3-creating-a-manual-layout-for-the-ring-oscillator-using-magic)      | Importing the xschem generated spice into Magic and routing the cells |:white_check_mark:|
+| 4  | [Analaysis of the ring oscillator pre-layout and post-layout results](https://github.com/rajivbishwokarma/msvsdasms/tree/master/week3#4-analaysis-of-the-ring-oscillator-pre-layout-and-post-layout-results)      | Comparing pre-layout (Xschem) and post-layout (ALIGN, Magic) outputs |:large_orange_diamond:|
 
 <br><br>
 
@@ -99,7 +99,7 @@ ext2spice
 
 Then, adding the design to a testbench as shown in this netlist: [ring_osc_sim_align.spice](./netlists/ngspice/ring_osc_sim_align.spice), we get the following output waveform.
 
-:underconstruction: [Issue#: Wrong output generation]
+:underconstruction: [[Issue #3](https://github.com/rajivbishwokarma/msvsdasms/issues/3): Wrong output generation]
 
 <img src="./images/ring_osc_wave_align.jpg">
 
