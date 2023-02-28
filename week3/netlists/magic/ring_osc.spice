@@ -1,0 +1,29 @@
+* SPICE3 file created from ring_osc.ext - technology: sky130A
+
+.subckt ring_osc Y vdd gnd
+X0 m1_184_112# Y vdd XM5/w_n211_n319# sky130_fd_pr__pfet_01v8 ad=2.9e+11p pd=2.58e+06u as=8.7e+11p ps=7.74e+06u w=1e+06u l=150000u
+X1 m1_184_112# Y gnd VSUBS sky130_fd_pr__nfet_01v8 ad=2.9e+11p pd=2.58e+06u as=8.7e+11p ps=7.74e+06u w=1e+06u l=150000u
+X2 m1_604_112# m1_184_112# vdd XM5/w_n211_n319# sky130_fd_pr__pfet_01v8 ad=2.9e+11p pd=2.58e+06u as=0p ps=0u w=1e+06u l=150000u
+X3 m1_604_112# m1_184_112# gnd VSUBS sky130_fd_pr__nfet_01v8 ad=2.9e+11p pd=2.58e+06u as=0p ps=0u w=1e+06u l=150000u
+X4 Y m1_604_112# vdd XM5/w_n211_n319# sky130_fd_pr__pfet_01v8 ad=2.9e+11p pd=2.58e+06u as=0p ps=0u w=1e+06u l=150000u
+X5 Y m1_604_112# gnd VSUBS sky130_fd_pr__nfet_01v8 ad=2.9e+11p pd=2.58e+06u as=0p ps=0u w=1e+06u l=150000u
+C0 vdd m1_184_112# 0.34fF
+C1 gnd m1_184_112# 0.35fF
+C2 vdd Y 0.30fF
+C3 Y gnd 0.30fF
+C4 Y m1_184_112# 0.47fF
+C5 m1_604_112# XM5/w_n211_n319# 0.59fF
+C6 vdd XM5/w_n211_n319# 1.14fF
+C7 vdd m1_604_112# 0.34fF
+C8 gnd XM5/w_n211_n319# 0.00fF
+C9 XM5/w_n211_n319# m1_184_112# 0.58fF
+C10 gnd m1_604_112# 0.34fF
+C11 m1_604_112# m1_184_112# 0.17fF
+C12 Y XM5/w_n211_n319# 1.06fF
+C13 Y m1_604_112# 0.46fF
+C14 vdd gnd 0.01fF
+C15 m1_604_112# VSUBS 0.20fF **FLOATING
+C16 m1_184_112# VSUBS 0.21fF **FLOATING
+C17 gnd VSUBS 0.66fF
+C18 XM5/w_n211_n319# VSUBS 2.62fF **FLOATING
+.ends

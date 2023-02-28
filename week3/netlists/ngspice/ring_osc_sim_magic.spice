@@ -1,0 +1,52 @@
+.option scale=5000u
+
+V1 vdd GND 1.8
+
+x1 vdd Y gnd magic_ring_osc
+
+**** begin user architecture code
+
+
+
+* .dc V2 0 1.8 0.01
+.tran 10p 4n 0
+
+.control
+  run
+  print allv > plot_data_v.txt
+  print alli > plot_data_i.txt
+  plot v(Y)
+.endc
+
+.lib /usr/local/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+
+**** end user architecture code
+
+.subckt magic_ring_osc vdd Y gnd
+X0 m1_184_112# Y vdd XM5/w_n211_n319# sky130_fd_pr__pfet_01v8 ad=2.9e+11p pd=2.58e+06u as=8.7e+11p ps=7.74e+06u w=1e+06u l=150000u
+X1 m1_184_112# Y gnd VSUBS sky130_fd_pr__nfet_01v8 ad=2.9e+11p pd=2.58e+06u as=8.7e+11p ps=7.74e+06u w=1e+06u l=150000u
+X2 m1_604_112# m1_184_112# vdd XM5/w_n211_n319# sky130_fd_pr__pfet_01v8 ad=2.9e+11p pd=2.58e+06u as=0p ps=0u w=1e+06u l=150000u
+X3 m1_604_112# m1_184_112# gnd VSUBS sky130_fd_pr__nfet_01v8 ad=2.9e+11p pd=2.58e+06u as=0p ps=0u w=1e+06u l=150000u
+X4 Y m1_604_112# vdd XM5/w_n211_n319# sky130_fd_pr__pfet_01v8 ad=2.9e+11p pd=2.58e+06u as=0p ps=0u w=1e+06u l=150000u
+X5 Y m1_604_112# gnd VSUBS sky130_fd_pr__nfet_01v8 ad=2.9e+11p pd=2.58e+06u as=0p ps=0u w=1e+06u l=150000u
+C0 m1_184_112# gnd 0.35fF
+C1 m1_184_112# vdd 0.34fF
+C2 vdd gnd 0.01fF
+C3 XM5/w_n211_n319# m1_604_112# 0.59fF
+C4 XM5/w_n211_n319# Y 1.06fF
+C5 Y m1_604_112# 0.46fF
+C6 XM5/w_n211_n319# m1_184_112# 0.58fF
+C7 m1_184_112# m1_604_112# 0.17fF
+C8 XM5/w_n211_n319# gnd 0.00fF
+C9 Y m1_184_112# 0.47fF
+C10 m1_604_112# gnd 0.34fF
+C11 Y gnd 0.30fF
+C12 XM5/w_n211_n319# vdd 1.14fF
+C13 m1_604_112# vdd 0.34fF
+C14 Y vdd 0.30fF
+C15 gnd VSUBS 0.66fF
+.ends
+
+
+.GLOBAL GND
+.end

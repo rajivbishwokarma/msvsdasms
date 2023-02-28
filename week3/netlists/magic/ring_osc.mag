@@ -1,0 +1,89 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1677523442
+<< locali >>
+rect 186 430 1138 486
+<< viali >>
+rect 136 430 186 486
+rect 1138 430 1188 486
+<< metal1 >>
+rect -50 1108 1210 1222
+rect -14 958 50 1108
+rect 130 1006 192 1064
+rect 406 958 470 1108
+rect 550 1006 612 1064
+rect 826 958 890 1108
+rect 970 1006 1032 1064
+rect -14 900 134 958
+rect 406 900 554 958
+rect 826 900 974 958
+rect 188 782 354 840
+rect 608 782 774 840
+rect 1028 782 1196 840
+rect 128 486 192 728
+rect 128 430 136 486
+rect 186 430 192 486
+rect 128 212 192 430
+rect 288 502 354 782
+rect 548 502 612 728
+rect 288 440 612 502
+rect 288 170 354 440
+rect 548 212 612 440
+rect 708 500 774 782
+rect 968 500 1032 730
+rect 708 438 1032 500
+rect 708 170 774 438
+rect 968 214 1032 438
+rect 1130 500 1196 782
+rect 1130 486 1210 500
+rect 1130 430 1138 486
+rect 1188 430 1210 486
+rect 1130 420 1210 430
+rect 184 112 354 170
+rect 604 112 774 170
+rect 1130 168 1196 420
+rect 1022 112 1196 168
+rect 1022 110 1188 112
+rect -14 -8 134 50
+rect 406 -8 554 50
+rect 826 -8 974 50
+rect -14 -156 52 -8
+rect 130 -106 192 -48
+rect 406 -156 470 -8
+rect 550 -106 612 -48
+rect 826 -156 890 -8
+rect 972 -106 1034 -48
+rect -50 -270 1210 -156
+use sky130_fd_pr__pfet_01v8_XGS3BL  XM1
+timestamp 1677523369
+transform 1 0 161 0 1 869
+box -211 -319 211 319
+use sky130_fd_pr__nfet_01v8_648S5X  XM2
+timestamp 1677523369
+transform 1 0 161 0 1 80
+box -211 -310 211 310
+use sky130_fd_pr__pfet_01v8_XGS3BL  XM3
+timestamp 1677523369
+transform 1 0 581 0 1 869
+box -211 -319 211 319
+use sky130_fd_pr__nfet_01v8_648S5X  XM4
+timestamp 1677523369
+transform 1 0 581 0 1 80
+box -211 -310 211 310
+use sky130_fd_pr__pfet_01v8_XGS3BL  XM5
+timestamp 1677523369
+transform 1 0 1001 0 1 869
+box -211 -319 211 319
+use sky130_fd_pr__nfet_01v8_648S5X  XM6
+timestamp 1677523369
+transform 1 0 1001 0 1 80
+box -211 -310 211 310
+<< labels >>
+rlabel metal1 1210 460 1210 460 7 Y
+port 1 w
+rlabel metal1 578 -240 578 -240 1 gnd
+port 3 n
+rlabel metal1 580 1200 580 1200 1 vdd
+port 2 n
+<< end >>
