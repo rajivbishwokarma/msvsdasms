@@ -105,7 +105,7 @@ Then, adding the design to a testbench as shown in this netlist: [ring_osc_sim_a
 
 <br><br>
 
-**3. Creating a manual layout for the ring oscillator using Magic**
+## **3. Creating a manual layout for the ring oscillator using Magic**
 
 [Note: I did this step just to just for fun, so not important to follow along.]
 
@@ -122,3 +122,6 @@ We get the following waveform as the result of the simulation.
 <img src="./images/ring_osc_wave_magic.jpg">
 
 And, this output validates the working of out layout created in Magic.
+
+## **4. Analaysis of the ring oscillator pre-layout and post-layout results**
+
