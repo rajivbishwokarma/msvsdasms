@@ -1,0 +1,22 @@
+{
+    "DESIGN_NAME": "rbcounter",
+    "VERILOG_FILES": "dir::src/*.v",
+    "CLOCK_PORT": "clk",
+    "CLOCK_PERIOD": 10.0,
+    "CLOCK_NET": "clk",
+    "PL_TARGET_DENSITY": 0.50,
+    "FP_PDN_AUTO_ADJUST": true,
+    "FP_SIZING": "relative",
+    "GLB_RESIZER_TIMING_OPTIMIZATIONS": true,
+    "pdk::sky130*": {
+        "SYNTH_MAX_FANOUT": 6,
+        "FP_CORE_UTIL": 35,
+        "scl::sky130_fd_sc_ms": {
+            "FP_CORE_UTIL": 30
+        }
+    },
+    "pdk::gf180mcu*": {
+        "DIODE_PADDING": 0,
+        "PL_TARGET_DENSITY": 0.62
+    }
+}
