@@ -11,6 +11,14 @@
 
 <br><br>
 
+## **Introduction**
+We are going to design a complete 4-bit asynchronous counter. This complete system is shown in the following figure. As shown in the figure, the red-shadded area is an anlog domain, which is used to generate a clock to the blue shaded area, which is a digital domain. This system, therefore, is an example of a mixed-signal design system.
+
+<p align="center">
+  <img src="./images/4_bit_counter.jpg">
+</p>
+
+<br><br>
 ## **1. Three-stage ring oscillator design in Xschem**
 
 A ring oscillator is a self-toggling circuit that generates clock-like pulses without any external input, other than the power that it needs. This is created by cascading inverters back to back in odd numbers (so that the next output is different than the previous). Following figure shows the design of a 3-stage ring oscillator created in **Xschem**. 
