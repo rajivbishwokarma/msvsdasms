@@ -23,10 +23,10 @@ Then, we use the following testbench circuit to test the 1-bit ADC that we desig
  <img src="./images/adc_sim.jpg">
 </p>
 
-Running the simulation in **ngspice**, currently I am getting the following error. This needs to be investigated. 
+Running the simulation in **ngspice**, we get the following output.
 
 <p align="center">
- <img width=300 src="./images/adc_ngspice.jpg">
+ <img src="./images/adc_ngspice_waveform.jpg">
 </p>
 
 <br><br>
